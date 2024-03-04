@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.circle{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#A68164;stroke:#A68164;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#A68164;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.coinAll {transform-style: preserve-3d;perspective:600px;}
+	.coin {animation: spin 2s linear infinite alternate;animation-timing-function:ease-in-out; transform-origin: 70% 0%;}
+	@keyframes spin {
+		0% {  transform:rotateY(0);}
+		100% { transform:rotateY(360deg)}
+	}
+</style>
+<g>	
+	<polyline class="st0" points="39.44,72.37 10.99,72.37 10.99,56.73 		"/>
+	<polyline class="st0" points="26.74,56.19 2.83,56.19 2.83,40 26.74,40 		"/>
+	<line class="st0" x1="10.99" y1="39.78" x2="10.99" y2="24.21"/>
+	<polyline class="st0" points="35.88,23.81 2.83,23.81 2.83,7.63 54.62,7.63 54.62,16.7 		"/>		
+</g>
+<g class="coinAll">
+	<g class="coin">
+	<circle class="circle" cx="54.78" cy="46.93" r="22.72"/>
+	<line class="st1" x1="49.58" y1="35.74" x2="49.58" y2="60.04"/>
+	<path class="st2" d="M49.58,51.72h7.11c4.39,0,7.99-3.6,7.99-7.99v0c0-4.39-3.6-7.99-7.99-7.99h-7.11V51.72z"/>
+	</g>
+</g>
+</svg>
