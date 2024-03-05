@@ -340,6 +340,12 @@ header {
             object-position: center;
         }
     }
+    .swiper-scrollbar {
+        background: $primary;
+    }
+    .swiper-scrollbar-drag {
+        background: $point;
+    }
 }
 .midtro {
     .mid-box {

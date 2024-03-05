@@ -427,6 +427,12 @@ header .gnb-bar span {
   -o-object-position: center;
      object-position: center;
 }
+.hotels .swiper-scrollbar {
+  background: #DDCBBE;
+}
+.hotels .swiper-scrollbar-drag {
+  background: #B07D58;
+}
 
 .midtro .mid-box {
   height: 300px;
