@@ -2,13 +2,14 @@
     // hotels
     var swiper = new Swiper(".hotelSwiper", {
         autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+            delay: 2000,
+            disableOnInteraction: false,
         },
         loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-        },
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
       });
 
     // // instagram
