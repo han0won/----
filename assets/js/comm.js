@@ -1,23 +1,23 @@
-var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-});
+   
+    // hotels
+    var swiper = new Swiper(".hotelSwiper", {
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
 
-  
-{
-    "devDependencies": {
-        "serve": "^11.2.0"
-    },
-    "main": "index.html",
-    "name": "swiper-vertical",
-    "scripts": {
-        "build": "echo This is a static template, there is no bundler or bundling involved!",
-        "start": "serve"
-    },
-    "tags": [
-        "swiper"
-    ]
-}
+    // // instagram
+    // var swiper = new Swiper(".instaSwiper", {
+    //     autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    //     },
+    //     loop: true,
+    //     slidesPerView: 1.5,
+    //     // spaceBetween: 15,
+    // });
