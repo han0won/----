@@ -431,15 +431,42 @@ header .gnb-bar span {
   position: relative;
 }
 .midtro .mid-box {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 110svh;
   background: #FCFAFA;
 }
-.midtro span {
+.midtro .mid-box span {
   font-size: 28px;
   color: #B07D58;
+  z-index: 100;
+}
+.midtro .mid-box .mid-img {
+  position: absolute;
+  width: 350px;
+  height: 680px;
+}
+.midtro .mid-box img {
+  display: block;
+  width: 100%;
+}
+.midtro .mid-box .img1 {
+  top: 130px;
+  left: 50px;
+}
+.midtro .mid-box .img2 {
+  top: 320px;
+  right: 80px;
+}
+.midtro .mid-box .img3 {
+  top: 360px;
+  left: 120px;
+}
+.midtro .mid-box .img4 {
+  top: 60px;
+  right: 100px;
 }
 .midtro p {
   display: flex;
@@ -450,16 +477,18 @@ header .gnb-bar span {
   text-align: center;
   font-size: 28px;
   font-weight: 700;
-  color: #DDCBBE;
+  color: #2D2D2D;
   line-height: 2;
-  mix-blend-mode: color-burn;
 }
 .midtro .video-wrap {
   position: absolute;
-  top: 500px;
+  top: 950px;
   left: 0;
   z-index: -100;
   overflow: hidden;
+}
+.midtro .video-wrap video {
+  width: 100%;
 }
 
 .club {
@@ -606,27 +635,6 @@ header .gnb-bar span {
   width: 100%;
 }
 
-.outro .outro-bg {
-  width: 100%;
-  height: 380px;
-}
-.outro .outro-bg img {
-  position: fixed;
-  top: -500px;
-  left: 0;
-  width: 100%;
-  z-index: -100;
-}
-.outro .outro-bg p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  font-size: 20px;
-  line-height: 2;
-}
-
 footer {
   background: #2D2D2D;
 }
@@ -646,6 +654,7 @@ footer .ft-text strong {
   font-size: 20px;
 }
 footer .ft-text p {
+  font-family: "Nanum Gothic";
   margin-top: 40px;
   font-size: 14px;
 }
