@@ -351,7 +351,7 @@ header .gnb-bar span {
 }
 
 .hotels {
-  height: 100vh;
+  height: 110vh;
   background: #FCFAFA;
 }
 .hotels .swiper {
@@ -422,7 +422,7 @@ header .gnb-bar span {
 
 .club {
   position: relative;
-  height: 100svh;
+  height: 110svh;
   color: white;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -434,6 +434,7 @@ header .gnb-bar span {
   height: 100%;
 }
 .club .club-bg img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -442,10 +443,15 @@ header .gnb-bar span {
 .club .bg3 {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   opacity: 0;
   transition: all 0.3s;
+}
+.club .bg1 img,
+.club .bg2 img,
+.club .bg3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .club .club-wrap {
   display: flex;
