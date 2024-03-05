@@ -346,11 +346,11 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100svh;
+        height: 110svh;
         background: $bg;
     }
     span {
-        font-size: 24px;
+        font-size: 28px;
         color: $point;
     }
     p {
@@ -362,14 +362,14 @@ header {
         text-align: center;
         font-size: 28px;
         font-weight: 700;
-        color: $text-default;
+        color: $primary;
         line-height: 2;
+        mix-blend-mode: color-burn;
     }
     .video-wrap {
         position: absolute;
-        top: 0;
+        top: 500px;
         left: 0;
-        width: 100%;
         z-index: -100;
         overflow: hidden;
     }
@@ -470,8 +470,12 @@ header {
     }
 }
 .instagram {
-    padding: 200px 0;
     background: $bg;
+    .insta-wrap {
+        margin: 0 auto;
+        padding: 200px 0;
+        max-width: 1440px;
+    }
     .insta-text {
         display: flex;
         flex-direction: column;
@@ -489,8 +493,22 @@ header {
             color: $text-default;
         }
     }
-    .insta-wrap {
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insta-box {
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 }
 .outro {

@@ -10,15 +10,17 @@
             el: ".swiper-scrollbar",
             hide: true,
           },
-      });
+    });
 
     // // instagram
-    // var swiper = new Swiper(".instaSwiper", {
-    //     autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    //     },
-    //     loop: true,
-    //     slidesPerView: 1.5,
-    //     // spaceBetween: 15,
-    // });
+    var swiper = new Swiper(".instaSwiper", {
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 4,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });

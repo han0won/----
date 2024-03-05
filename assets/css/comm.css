@@ -434,11 +434,11 @@ header .gnb-bar span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100svh;
+  height: 110svh;
   background: #FCFAFA;
 }
 .midtro span {
-  font-size: 24px;
+  font-size: 28px;
   color: #B07D58;
 }
 .midtro p {
@@ -450,14 +450,14 @@ header .gnb-bar span {
   text-align: center;
   font-size: 28px;
   font-weight: 700;
-  color: #2D2D2D;
+  color: #DDCBBE;
   line-height: 2;
+  mix-blend-mode: color-burn;
 }
 .midtro .video-wrap {
   position: absolute;
-  top: 0;
+  top: 500px;
   left: 0;
-  width: 100%;
   z-index: -100;
   overflow: hidden;
 }
@@ -563,8 +563,12 @@ header .gnb-bar span {
 }
 
 .instagram {
-  padding: 200px 0;
   background: #FCFAFA;
+}
+.instagram .insta-wrap {
+  margin: 0 auto;
+  padding: 200px 0;
+  max-width: 1440px;
 }
 .instagram .insta-text {
   display: flex;
@@ -583,8 +587,22 @@ header .gnb-bar span {
 .instagram .insta-text a {
   color: #2D2D2D;
 }
-.instagram .insta-wrap {
+.instagram .swiper {
+  width: 100%;
+  height: 100%;
+}
+.instagram .swiper-slide {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram .insta-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.instagram .insta-box img {
+  display: block;
+  width: 100%;
 }
 
 .outro .outro-bg {
