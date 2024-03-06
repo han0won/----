@@ -69,7 +69,21 @@ var swiper = new Swiper(".hotelSwiper", {
         },
 });
 
-// // instagram
+window.addEventListener('scroll', function() {
+    const hotelsSection = document.querySelector('section.hotels');
+    const hotelImg = document.querySelector('.hotel-img')
+
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const hotelsTop = hotelsSection.offsetTop;
+
+    if (scrollTop >= hotelsTop) {
+        hotelImg.style.transform = 'translateX(0)';
+    } else {
+        hotelImg.style.transform = 'translateX(100%)';
+    }
+})
+
+// instagram
 var swiper = new Swiper(".instaSwiper", {
     autoplay: {
         delay: 2000,
