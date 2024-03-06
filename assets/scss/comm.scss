@@ -45,6 +45,51 @@ header {
     background-image: url(../../images/bg-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 0;
+        height: 0;
+        z-index: 2;
+        background: rgba(221, 203, 190, 0.3);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    &:hover::before {
+        -webkit-animation: circle .75s;
+        animation: circle .75s;
+    }
+    @-webkit-keyframes circle {
+        0% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 1;
+        }
+        100% {
+          width: 200%;
+          height: 200%;
+          opacity: 0;
+        }
+      }
+      @keyframes circle {
+        0% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 1;
+        }
+        100% {
+          width: 200%;
+          height: 200%;
+          opacity: 0;
+        }
+    }
     .main-text {
         display: flex;
         flex-direction: column;
@@ -85,8 +130,12 @@ header {
         border-radius: 50px;
         font-family: "Nanum Gothic";
         font-weight: 400;
-        color: $text-default;
-        background: $primary;
+        color: white;
+        background: $text-default;
+        transition: all 0.3s;
+        &:hover {
+            background: $point;
+        }
     }
 }
 .hotel-list {
@@ -179,7 +228,7 @@ header {
     .box-wrap {
         padding: 300px 0;
         width: 100%;
-        background: $bg;
+        background: $text-default;
         @keyframes rotation {
             from {
                 transform: rotate(0deg);
@@ -214,11 +263,13 @@ header {
             justify-content: center;
             strong {
                 display: block;
+                color: $point;
                 font-size: 28px;
                 font-weight: 700;
             }
             p {
                 margin-top: 60px;
+                color: $primary;
                 font-family: "Nanum Gothic";
                 font-size: 16px;
                 line-height: 1.8;
@@ -232,7 +283,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 200px;
+        padding: 200px 0;
     }
     .card-wrap {
         margin-bottom: 100px;
@@ -256,7 +307,8 @@ header {
     }
     p {
         font-family: "Nanum Gothic";
-        line-height: 2;
+        font-size: 18px;
+        line-height: 2.2;
         text-align: center;
     }
 }
@@ -351,6 +403,7 @@ header {
         background: $bg;
         span {
             font-size: 28px;
+            font-weight: 700;
             color: $point;
             z-index: 100;
         }
@@ -358,6 +411,9 @@ header {
             position: absolute;
             width: 350px;
             height: 680px;
+            border-top-left-radius: 175px;
+            border-top-right-radius: 175px;
+            overflow: hidden;
         }
         img {
             display: block;
@@ -365,22 +421,23 @@ header {
         }
         .img1 {
             top: 130px;
-            left: 50px;
+            left: 120px;
         }
         .img2 {
             top: 320px;
-            right: 80px;
+            right: 130px;
         }
         .img3 {
             top: 360px;
-            left: 120px;
+            left: 110px;
         }
         .img4 {
             top: 60px;
-            right: 100px;
+            right: 140px;
         }
     }
     p {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -391,6 +448,16 @@ header {
         font-weight: 700;
         color: $text-default;
         line-height: 2;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100px;
+            height: 10px;
+            background: $bg;
+        }
     }
     .video-wrap {
         position: absolute;
