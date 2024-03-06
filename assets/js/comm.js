@@ -1,4 +1,5 @@
-   
+AOS.init();
+
     // hotels
     var swiper = new Swiper(".hotelSwiper", {
         // autoplay: {

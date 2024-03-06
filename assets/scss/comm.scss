@@ -153,6 +153,7 @@ header {
             font-weight: 700;
         }
         span {
+            display: block;
             font-family: "Nanum Gothic";
             font-size: 20px;
             font-weight: 400;
@@ -302,9 +303,29 @@ header {
             }
         }
         img {
+            position: relative;
             width: 300px;
             height: 480px;
             object-fit: cover;
+            &:before {
+                position: absolute;
+                background: $point;
+                animation: colorbox 1.8s .6s ease;
+            }
+        }
+        @keyframes colorbox {
+            0%{
+              width: 0;
+              left: 0;
+            }
+            65%{
+              width: 100%;
+              left: 0;
+            }
+            100% {
+              width: 0;
+              left: 100%;
+            }
         }
     }
     p {
@@ -480,7 +501,7 @@ header {
     position: relative;
     height: 110svh;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     .club-bg {
         position: absolute;
         top: 0;
