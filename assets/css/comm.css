@@ -404,11 +404,15 @@ header .gnb-bar span {
 }
 .hotels .hotel-name {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30%;
   text-align: end;
+}
+.hotels .hotel-name .name-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .hotels .hotel-name img {
   height: 30px;
@@ -443,7 +447,7 @@ header .gnb-bar span {
   font-size: 14px;
 }
 .hotels .hotel-name a {
-  font-size: 12px;
+  font-size: 14px;
   color: #2D2D2D;
 }
 .hotels .hotel-img {
