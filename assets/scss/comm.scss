@@ -25,14 +25,16 @@ header {
         padding: 0 20px ;
     }
     .gnb-bar {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        a {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         span {
             display: block;
-            width: 40px;
+            width: 30px;
             height: 1px;
-            color: white;
+            background: white;
         }
     }
 }
