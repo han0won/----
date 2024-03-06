@@ -136,13 +136,13 @@ header .gnb-bar span {
   width: 0;
   height: 0;
   z-index: 2;
-  background: rgba(221, 203, 190, 0.3);
+  background: rgba(221, 203, 190, 0.2);
   border-radius: 100%;
   transform: translate(-50%, -50%);
   opacity: 0;
 }
 .main-banner:hover::before {
-  animation: circle 0.75s;
+  animation: circle 1s;
 }
 @keyframes circle {
   0% {
@@ -192,17 +192,44 @@ header .gnb-bar span {
   font-size: 24px;
   font-weight: 700;
 }
-.main-banner a {
-  padding: 15px 20px;
+.main-banner .btn-reserve {
+  position: relative;
+  padding: 10px 5px;
   border-radius: 50px;
   font-family: "Nanum Gothic";
   font-weight: 400;
   color: white;
   background: #2D2D2D;
+  overflow: hidden;
   transition: all 0.3s;
 }
-.main-banner a:hover {
+.main-banner .btn-reserve a {
+  width: 100%;
+  height: 100%;
+}
+.main-banner .btn-reserve span {
+  display: block;
+  padding: 0 20px;
+  animation: move-left 2s linear infinite;
+}
+.main-banner .btn-reserve span::after {
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.main-banner .btn-reserve:hover {
   background: #B07D58;
+}
+@keyframes move-left {
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .hotel-list {
@@ -230,6 +257,13 @@ header .gnb-bar span {
   justify-content: center;
   gap: 80px;
 }
+.hotel-list .list-cursor {
+  position: absolute;
+  z-index: 2000;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+}
 .hotel-list .hotel-img {
   position: relative;
   width: 500px;
@@ -243,6 +277,10 @@ header .gnb-bar span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0;
+}
+.hotel-list .hotel-img .active {
+  opacity: 1;
 }
 .hotel-list .hotel-name {
   display: flex;
@@ -265,6 +303,9 @@ header .gnb-bar span {
 }
 .hotel-list .hotel-name a:hover {
   color: #B07D58;
+}
+.hotel-list .hotel-name:hover .list-cursor {
+  opacity: 1;
 }
 
 .intro .intro-wrap {

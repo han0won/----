@@ -44,7 +44,7 @@
                     <p>여행이 더 즐거운 곳, 라한</p>
                     <div class="btn-reserve">
                         <a href="#">
-                            예약하기
+                            <span data-text="예약하기">예약하기</span>
                         </a>
                     </div>
                 </div>
@@ -56,32 +56,35 @@
                 </div>
                 <div class="list-wrap">
                     <div class="hotel-img">
-                        <img src="./images/hotels/list-jeonju.jpg" alt="라한호텔 전주">
-                        <img src="./images/hotels/list-pohang.jpg" alt="라한호텔 포항">
-                        <img src="./images/hotels/list-gyeonju.jpg" alt="라한셀렉트 경주">
-                        <img src="./images/hotels/list-mokpo.jpg" alt="호텔현대 바이 라한 목포">
-                        <img src="./images/hotels/list-ulsan.jpg" alt="호텔현대 바이 라한 울산">
+                        <img class="active" src="./images/hotels/list-jeonju.jpg" alt="라한호텔 전주">
+                        <img class="pohang-img" src="./images/hotels/list-pohang.jpg" alt="라한호텔 포항">
+                        <img class="gyeongju-img" src="./images/hotels/list-gyeonju.jpg" alt="라한셀렉트 경주">
+                        <img class="mokpo-img" src="./images/hotels/list-mokpo.jpg" alt="호텔현대 바이 라한 목포">
+                        <img class="ulsan-img" src="./images/hotels/list-ulsan.jpg" alt="호텔현대 바이 라한 울산">
                     </div>
                     <div class="hotel-name">
+                        <div class="list-cursor">
+                            <img src="./images/cursor-hotellist.png" alt="호텔 커서">
+                        </div>
                         <span>LAHAN NETWORK</span>
                         <ul>
                             <li data-aos="fade-left" data-aos-duration="1000">
                                 <a href="#">라한호텔 전주</a>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">
+                            <li class="pohang-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">
                                 <a href="#">라한호텔 포항</a>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                            <li class="gyeongju-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                                 <a href="#">라한셀렉트 경주</a>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                            <li class="mokpo-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
                                 <a href="#">호텔현대 바이 라한 목포</a>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                            <li class="ulsan-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                                 <a href="#">호텔현대 바이 라한 울산</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
             </section>
             <section class="intro">

@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
     <script src="https://kit.fontawesome.com/af95449672.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./assets/js/comm.js"></script>
 </head>
 <body>
@@ -26,9 +28,11 @@
                 </h1>
                 <div id="gnb">
                     <div class="gnb-bar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -40,51 +44,55 @@
                     <p>여행이 더 즐거운 곳, 라한</p>
                     <div class="btn-reserve">
                         <a href="#">
-                            예약하기
+                            <span data-text="예약하기">예약하기</span>
                         </a>
                     </div>
                 </div>
             </section>
             <section class="hotel-list">
                 <div class="title-wrap">
-                    <h2>ABOUT LAHAN</h2>
-                    <span>라한에서의 모든 순간은 즐거운 기억이 됩니다.</span>
+                    <h2 data-aos="fade-up" data-aos-duration="1000">ABOUT LAHAN</h2>
+                    <span data-aos="fade-up" data-aos-duration="1000">라한에서의 모든 순간은 즐거운 기억이 됩니다.</span>
                 </div>
                 <div class="list-wrap">
                     <div class="hotel-img">
-                        <img src="./images/hotels/list-jeonju.jpg" alt="라한호텔 전주">
-                        <img src="./images/hotels/list-pohang.jpg" alt="라한호텔 포항">
-                        <img src="./images/hotels/list-gyeonju.jpg" alt="라한셀렉트 경주">
-                        <img src="./images/hotels/list-mokpo.jpg" alt="호텔현대 바이 라한 목포">
-                        <img src="./images/hotels/list-ulsan.jpg" alt="호텔현대 바이 라한 울산">
+                        <img class="active" src="./images/midtro-2.jpg" alt="라한호텔 전주">
+                        <img class="jeonju-img" src="./images/hotels/list-jeonju.jpg" alt="라한호텔 전주">
+                        <img class="pohang-img" src="./images/hotels/list-pohang.jpg" alt="라한호텔 포항">
+                        <img class="gyeongju-img" src="./images/hotels/list-gyeonju.jpg" alt="라한셀렉트 경주">
+                        <img class="mokpo-img" src="./images/hotels/list-mokpo.jpg" alt="호텔현대 바이 라한 목포">
+                        <img class="ulsan-img" src="./images/hotels/list-ulsan.jpg" alt="호텔현대 바이 라한 울산">
                     </div>
                     <div class="hotel-name">
+                        <div class="list-cursor">
+                            <img src="./images/cursor-hotellist.png" alt="호텔 커서">
+                        </div>
                         <span>LAHAN NETWORK</span>
                         <ul>
-                            <li>
+                            <li class="jeonju-text" data-aos="fade-left" data-aos-duration="1000">
                                 <a href="#">라한호텔 전주</a>
                             </li>
-                            <li>
+                            <li class="pohang-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">
                                 <a href="#">라한호텔 포항</a>
                             </li>
-                            <li>
+                            <li class="gyeongju-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                                 <a href="#">라한셀렉트 경주</a>
                             </li>
-                            <li>
+                            <li class="mokpo-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
                                 <a href="#">호텔현대 바이 라한 목포</a>
                             </li>
-                            <li>
+                            <li class="ulsan-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                                 <a href="#">호텔현대 바이 라한 울산</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
             </section>
             <section class="intro">
                 <div class="intro-wrap">
                     <div class="intro-bg">
                         <img src="./images/bg-intro.jpg" alt="호텔 사진">                   
-                        <p>
+                        <p data-aos="fade-up" data-aos-duration="1500">
                             호텔에 대한 천편일률적인 기준에서 벗어나
                             <br>새로운 스탠다드를 제시하는 전국 라한호텔에서
                             <br>여행이 더 즐거워지는 특별한 경험을 만나보세요.
@@ -92,15 +100,15 @@
                     </div>
                     <div class="box-wrap">
                         <div class="intro-box">
-                            <div class="intro-img">
+                            <div class="intro-img" data-aos="fade-right" data-aos-duration="1500">
                                 <img src="./images/intro-4.jpg" alt="호텔 사진">
                             </div>
                             <div class="intro-text">
-                                <strong>
+                                <strong data-aos="fade-left" data-aos-duration="1500">
                                     라한, 이름에 담긴
                                     <br>‘즐거운 한국, 즐거운 여행’
                                 </strong>
-                                <p>
+                                <p data-aos="fade-left" data-aos-duration="1500">
                                     라한은 즐거움을 뜻하는 순수 우리말 ‘라온’과
                                     <br>한국의 ‘한’을 조합한 이름으로,
                                     <br>호텔을 방문하는 분들께 즐거운 국내여행을 
@@ -110,17 +118,17 @@
                         </div>
                         <div class="intro-box reverse-box">
                             <div class="intro-text">
-                                <strong>
+                                <strong data-aos="fade-right" data-aos-duration="1500">
                                     여행이 더 즐거운 곳, 라한
                                 </strong>
-                                <p>
+                                <p data-aos="fade-right" data-aos-duration="1500">
                                     천년고도의 도시 경주는 라한호텔과 만나
                                     <br>온 가족 즐길거리가 가득한 호캉스의 성지가 되고,
                                     <br>전통문화의 도시 전주는 라한호텔과 만나
                                     <br>가장 역사적인 도시 속, 가장 트렌디한 여행을 선사합니다.
                                 </p>
                             </div>
-                            <div class="intro-img">
+                            <div class="intro-img" data-aos="fade-left" data-aos-duration="1500">
                                 <img src="./images/intro-5.jpg" alt="풍경 사진">
                             </div>
                         </div>
@@ -142,7 +150,7 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="1500">
                         객실, 다이닝, 부대시설 그리고 다채로운 라이프스타일 프로그램 등
                         <br>호텔에 대한 틀에 박힌 기준에서 벗어나 '스테이 그 이상의 경험'을 제공하는
                         <br>전국 라한호텔에서 즐거운 국내여행을 시작하세요.
@@ -283,7 +291,7 @@
             </section>
             <section class="midtro">
                 <div class="mid-box">
-                    <span>
+                    <span data-aos="fade-up" data-aos-duration="1000">
                         Travel becomes more enjoyable.
                     </span>
                     <div class="mid-img img1">
@@ -298,7 +306,9 @@
                     <br>독특하고 깊이있는 경험을 통해 색다른 영감을 얻는 일.
                 </p>
                 <div class="mid-box">
-                    <span> With Lahan hotel.</span>
+                    <span data-aos="fade-up" data-aos-duration="1000">
+                        With Lahan hotel.
+                    </span>
                     <div class="mid-img img3">
                         <img src="./images/midtro-3.jpg" alt="">
                     </div>
@@ -329,21 +339,21 @@
                     </div>
                     <div class="club-info">
                         <div class="info-box">
-                            <div class="club-icon">
+                            <div class="club-icon" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                                 <img src="./images/icon-club1.svg" alt="회원특전">
                             </div>
-                            <strong>회원특전</strong>
-                            <p>
+                            <strong data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">회원특전</strong>
+                            <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                                 레이트 체크아웃, 웰컴스낵 등
                             <br> 가입 즉시 제공되는 풍성한 특전
                         </p>
                         </div>
                         <div class="info-box">
-                            <div class="club-icon">
+                            <div class="club-icon" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                                 <img src="./images/icon-club2.svg" alt="포인트">
                             </div>
-                            <strong>포인트 적립 및 결제</strong>
-                            <p>
+                            <strong data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">포인트 적립 및 결제</strong>
+                            <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                                 현금처럼 이용가능한
                                 <br>포인트 3~5% 적립
                             </p>
@@ -352,11 +362,11 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <div class="club-icon">
+                            <div class="club-icon" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
                                 <img src="./images/icon-club3.svg" alt="회원전용 상품">
                             </div>
-                            <strong>회원전용 상품</strong>
-                            <p>
+                            <strong data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">회원전용 상품</strong>
+                            <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
                                 멤버를 위한 연중 최적가
                                 <br>객실 상품과 프로모션
                             </p>
@@ -370,17 +380,17 @@
             <section class="instagram">
                 <div class="insta-wrap">
                     <div class="insta-text">
-                        <p>
+                        <p data-aos="fade-up" data-aos-duration="1000">
                             FOLLOW US
                             <br>ON INSTAGRAM
                         </p>
-                        <span>SNS로 생생하게 만나는 전국라한 호텔 소식</span>
-                        <a href="#">
+                        <span data-aos="fade-up" data-aos-duration="1000">SNS로 생생하게 만나는 전국라한 호텔 소식</span>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000">
                             <i class="fa-brands fa-instagram" style="color: #2d2d2d;"></i>
                             lahan_hotel
                         </a>
                     </div>
-                    <div class="swiper instaSwiper">
+                    <div class="swiper instaSwiper" data-aos="fade-up" data-aos-duration="1000">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="insta-box">
