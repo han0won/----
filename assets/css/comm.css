@@ -257,6 +257,9 @@ header .gnb-bar span {
   justify-content: center;
   gap: 80px;
 }
+.hotel-list .list-wrap:hover .list-cursor {
+  opacity: 1;
+}
 .hotel-list .list-cursor {
   position: absolute;
   z-index: 2000;
@@ -264,12 +267,12 @@ header .gnb-bar span {
   overflow: hidden;
   opacity: 0;
 }
-.hotel-list .hotel-img {
+.hotel-list .list-img {
   position: relative;
   width: 500px;
   height: 650px;
 }
-.hotel-list .hotel-img img {
+.hotel-list .list-img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -279,33 +282,37 @@ header .gnb-bar span {
      object-fit: cover;
   opacity: 0;
 }
-.hotel-list .hotel-img .active {
+.hotel-list .list-img .active {
   opacity: 1;
 }
-.hotel-list .hotel-name {
+.hotel-list .list-img .city-img {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.hotel-list .list-img .city-img.active {
+  opacity: 1;
+}
+.hotel-list .list-name {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.hotel-list .hotel-name span {
+.hotel-list .list-name span {
   margin-bottom: 60px;
   color: #DDCBBE;
 }
-.hotel-list .hotel-name li {
+.hotel-list .list-name li {
   margin-bottom: 40px;
 }
-.hotel-list .hotel-name li:last-child {
+.hotel-list .list-name li:last-child {
   margin: 0;
 }
-.hotel-list .hotel-name a {
+.hotel-list .list-name a {
   font-size: 40px;
   color: #2D2D2D;
 }
-.hotel-list .hotel-name a:hover {
+.hotel-list .list-name a:hover {
   color: #B07D58;
-}
-.hotel-list .hotel-name:hover .list-cursor {
-  opacity: 1;
 }
 
 .intro .intro-wrap {

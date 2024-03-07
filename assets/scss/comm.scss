@@ -190,6 +190,9 @@ header {
         display: flex;
         justify-content: center;
         gap: 80px;
+        &:hover .list-cursor {
+            opacity: 1;
+        }
     }
     .list-cursor {
         position: absolute;
@@ -198,7 +201,7 @@ header {
         overflow: hidden;
         opacity: 0;
     }
-    .hotel-img {
+    .list-img {
         position: relative;
         width: 500px;
         height: 650px;
@@ -214,8 +217,15 @@ header {
         .active {
             opacity: 1;
         }
+        .city-img {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .city-img.active {
+            opacity: 1;
+        }
     }
-    .hotel-name {
+    .list-name {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -235,9 +245,6 @@ header {
             &:hover {
                 color: $point;
             }
-        }
-        &:hover .list-cursor {
-            opacity: 1;
         }
     }
 }
