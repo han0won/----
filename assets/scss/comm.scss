@@ -489,7 +489,7 @@ header {
             }
         }
     }
-    .jeonju {
+    #jeonju {
         .img1 {
             background-image: url(../../images/hotels/bg-jeonju.jpg);
         }
@@ -500,7 +500,7 @@ header {
             background-image: url(../../images/hotels/bg-jeonju3.jpg);
         }
     }
-    .pohang {
+    #pohang {
         .img1 {
             background-image: url(../../images/hotels/bg-pohang.jpg);
         }
@@ -511,7 +511,7 @@ header {
             background-image: url(../../images/hotels/bg-pohang3.jpg);
         }
     }
-    .gyeongju {
+    #gyeongju {
         .img1 {
             background-image: url(../../images/hotels/bg-gyeongju.jpg);
         }
@@ -522,7 +522,7 @@ header {
             background-image: url(../../images/hotels/bg-gyeongju3.jpg);
         }
     }
-    .mokpo {
+    #mokpo {
         .img1 {
             background-image: url(../../images/hotels/bg-mokpo.jpg);
         }
@@ -533,7 +533,7 @@ header {
             background-image: url(../../images/hotels/bg-mokpo3.jpg);
         }
     }
-    .ulsan {
+    #ulsan {
         .img1 {
             background-image: url(../../images/hotels/bg-ulsan.jpg);
         }
@@ -690,10 +690,7 @@ header {
         width: 70%;
         height: 100%;
         .info-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
             width: 33.3%;
             height: 100%;
             border-left: 1px solid white;
@@ -705,6 +702,13 @@ header {
             }
             &:nth-child(3):hover .bg3 {
                 opacity: 1;
+            }
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
             }
         }
         .club-icon {

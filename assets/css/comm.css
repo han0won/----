@@ -558,49 +558,49 @@ header .gnb-bar span {
   scale: 1.05;
   filter: grayscale(0%);
 }
-.hotels .jeonju .img1 {
+.hotels #jeonju .img1 {
   background-image: url(../../images/hotels/bg-jeonju.jpg);
 }
-.hotels .jeonju .img2 {
+.hotels #jeonju .img2 {
   background-image: url(../../images/hotels/bg-jeonju2.jpg);
 }
-.hotels .jeonju .img3 {
+.hotels #jeonju .img3 {
   background-image: url(../../images/hotels/bg-jeonju3.jpg);
 }
-.hotels .pohang .img1 {
+.hotels #pohang .img1 {
   background-image: url(../../images/hotels/bg-pohang.jpg);
 }
-.hotels .pohang .img2 {
+.hotels #pohang .img2 {
   background-image: url(../../images/hotels/bg-pohang2.jpg);
 }
-.hotels .pohang .img3 {
+.hotels #pohang .img3 {
   background-image: url(../../images/hotels/bg-pohang3.jpg);
 }
-.hotels .gyeongju .img1 {
+.hotels #gyeongju .img1 {
   background-image: url(../../images/hotels/bg-gyeongju.jpg);
 }
-.hotels .gyeongju .img2 {
+.hotels #gyeongju .img2 {
   background-image: url(../../images/hotels/bg-gyeongju2.jpg);
 }
-.hotels .gyeongju .img3 {
+.hotels #gyeongju .img3 {
   background-image: url(../../images/hotels/bg-gyeongju3.jpg);
 }
-.hotels .mokpo .img1 {
+.hotels #mokpo .img1 {
   background-image: url(../../images/hotels/bg-mokpo.jpg);
 }
-.hotels .mokpo .img2 {
+.hotels #mokpo .img2 {
   background-image: url(../../images/hotels/bg-mokpo2.jpg);
 }
-.hotels .mokpo .img3 {
+.hotels #mokpo .img3 {
   background-image: url(../../images/hotels/bg-mokpo3.jpg);
 }
-.hotels .ulsan .img1 {
+.hotels #ulsan .img1 {
   background-image: url(../../images/hotels/bg-ulsan.jpg);
 }
-.hotels .ulsan .img2 {
+.hotels #ulsan .img2 {
   background-image: url(../../images/hotels/bg-ulsan2.jpg);
 }
-.hotels .ulsan .img3 {
+.hotels #ulsan .img3 {
   background-image: url(../../images/hotels/bg-ulsan3.jpg);
 }
 .hotels .swiper-button-next,
@@ -757,10 +757,6 @@ header .gnb-bar span {
   height: 100%;
 }
 .club .club-info .info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 33.3%;
   height: 100%;
   border-left: 1px solid white;
@@ -773,6 +769,13 @@ header .gnb-bar span {
 }
 .club .club-info .info-box:nth-child(3):hover .bg3 {
   opacity: 1;
+}
+.club .club-info .info-box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .club .club-info .club-icon {
   width: 60px;
