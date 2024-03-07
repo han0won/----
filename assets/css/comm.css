@@ -210,7 +210,7 @@ header .gnb-bar span {
 .main-banner .btn-reserve span {
   display: block;
   padding: 0 20px;
-  animation: move-left 2s linear infinite;
+  animation: move-left 3s linear infinite;
 }
 .main-banner .btn-reserve span::after {
   position: absolute;
@@ -225,6 +225,7 @@ header .gnb-bar span {
 }
 .main-banner .btn-reserve:hover {
   background: #B07D58;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 @keyframes move-left {
   to {
@@ -345,7 +346,7 @@ header .gnb-bar span {
 .intro .box-wrap {
   padding: 300px 0;
   width: 100%;
-  background: #2D2D2D;
+  background: linear-gradient(180deg, rgb(221, 203, 190) 40%, rgb(252, 250, 250) 100%);
 }
 @keyframes rotation {
   from {
@@ -389,7 +390,7 @@ header .gnb-bar span {
 }
 .intro .box-wrap .intro-text p {
   margin-top: 60px;
-  color: #DDCBBE;
+  color: #2D2D2D;
   font-family: "Nanum Gothic";
   font-size: 16px;
   line-height: 1.8;
