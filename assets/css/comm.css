@@ -633,6 +633,21 @@ header .gnb-bar span {
   border-top-left-radius: 175px;
   border-top-right-radius: 175px;
   overflow: hidden;
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(90deg);
+  }
+  60% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 .midtro .mid-box img {
   display: block;
