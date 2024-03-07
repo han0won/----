@@ -58,32 +58,17 @@ ulsanText.addEventListener('mouseleave', function() {
 
 // hotels
 var swiper = new Swiper(".hotelSwiper", {
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     loop: true,
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-        },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 });
 
-window.addEventListener('scroll', function() {
-    const hotelsSection = document.querySelector('section.hotels');
-    const hotelImg = document.querySelector('.hotel-img')
-
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const hotelsTop = hotelsSection.offsetTop;
-
-    if (scrollTop >= hotelsTop) {
-        hotelImg.style.transform = 'translateX(0)';
-        hotelImg.style.opacity = 1;
-    } else {
-        hotelImg.style.transform = 'translateX(100%)';
-        hotelImg.style.opacity = 0;
-    }
-})
 
 // instagram
 var swiper = new Swiper(".instaSwiper", {
@@ -92,8 +77,4 @@ var swiper = new Swiper(".instaSwiper", {
         disableOnInteraction: false,
     },
     slidesPerView: 4,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
 });

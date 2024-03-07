@@ -456,7 +456,7 @@ header .gnb-bar span {
 }
 
 .hotels {
-  height: 100vh;
+  height: 110vh;
   background: #FCFAFA;
 }
 .hotels .swiper {
@@ -476,30 +476,30 @@ header .gnb-bar span {
   height: 100%;
   background: rgba(221, 203, 190, 0.3);
 }
-.hotels .hotel-name {
+.hotels .hotel-wrap .hotel-name {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30%;
   text-align: end;
 }
-.hotels .hotel-name .name-info {
+.hotels .hotel-wrap .hotel-name .name-info {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.hotels .hotel-name img {
+.hotels .hotel-wrap .hotel-name img {
   height: 30px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.hotels .hotel-name strong {
+.hotels .hotel-wrap .hotel-name strong {
   position: relative;
   display: block;
   margin-top: 35px;
   font-size: 36px;
 }
-.hotels .hotel-name strong::after {
+.hotels .hotel-wrap .hotel-name strong::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -509,39 +509,103 @@ header .gnb-bar span {
   border-radius: 4px;
   background: #DDCBBE;
 }
-.hotels .hotel-name span {
+.hotels .hotel-wrap .hotel-name span {
   display: block;
   margin: 45px 0;
   width: 30px;
   height: 1px;
   background: #2D2D2D;
 }
-.hotels .hotel-name p {
+.hotels .hotel-wrap .hotel-name p {
   margin-bottom: 55px;
   font-size: 14px;
 }
-.hotels .hotel-name a {
+.hotels .hotel-wrap .hotel-name a {
   font-size: 14px;
   color: #2D2D2D;
 }
-.hotels .hotel-img {
+.hotels .hotel-wrap .hotel-img {
   width: 70%;
-  transition: all 1s ease;
 }
-.hotels .hotel-img img {
-  display: block;
+.hotels .hotel-wrap .hotel-img ul {
   width: 100%;
+  height: 150%;
+  overflow: hidden;
+  animation: imgRoll 8s linear infinite alternate;
+}
+@keyframes imgRoll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-24%);
+  }
+}
+.hotels .hotel-wrap .hotel-img li {
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+.hotels .hotel-wrap .hotel-img .img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  filter: grayscale(100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
 }
-.hotels .swiper-scrollbar {
-  background: #DDCBBE;
+.hotels .hotel-wrap .hotel-img .img:hover {
+  scale: 1.05;
+  filter: grayscale(0%);
 }
-.hotels .swiper-scrollbar-drag {
-  background: #B07D58;
+.hotels .jeonju .img1 {
+  background-image: url(../../images/hotels/bg-jeonju.jpg);
+}
+.hotels .jeonju .img2 {
+  background-image: url(../../images/hotels/bg-jeonju2.jpg);
+}
+.hotels .jeonju .img3 {
+  background-image: url(../../images/hotels/bg-jeonju3.jpg);
+}
+.hotels .pohang .img1 {
+  background-image: url(../../images/hotels/bg-pohang.jpg);
+}
+.hotels .pohang .img2 {
+  background-image: url(../../images/hotels/bg-pohang2.jpg);
+}
+.hotels .pohang .img3 {
+  background-image: url(../../images/hotels/bg-pohang3.jpg);
+}
+.hotels .gyeongju .img1 {
+  background-image: url(../../images/hotels/bg-gyeongju.jpg);
+}
+.hotels .gyeongju .img2 {
+  background-image: url(../../images/hotels/bg-gyeongju2.jpg);
+}
+.hotels .gyeongju .img3 {
+  background-image: url(../../images/hotels/bg-gyeongju3.jpg);
+}
+.hotels .mokpo .img1 {
+  background-image: url(../../images/hotels/bg-mokpo.jpg);
+}
+.hotels .mokpo .img2 {
+  background-image: url(../../images/hotels/bg-mokpo2.jpg);
+}
+.hotels .mokpo .img3 {
+  background-image: url(../../images/hotels/bg-mokpo3.jpg);
+}
+.hotels .ulsan .img1 {
+  background-image: url(../../images/hotels/bg-ulsan.jpg);
+}
+.hotels .ulsan .img2 {
+  background-image: url(../../images/hotels/bg-ulsan2.jpg);
+}
+.hotels .ulsan .img3 {
+  background-image: url(../../images/hotels/bg-ulsan3.jpg);
+}
+.hotels .swiper-button-next,
+.hotels .swiper-button-prev {
+  color: #B07D58;
 }
 
 .midtro {
@@ -556,7 +620,7 @@ header .gnb-bar span {
   background: #FCFAFA;
 }
 .midtro .mid-box span {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   color: #B07D58;
   z-index: 100;
