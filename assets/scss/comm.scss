@@ -389,7 +389,7 @@ header {
     }
 }
 .hotels {
-    height: 110vh;    
+    height: 100vh;    
     background: $bg;
     .swiper {
         width: 100%;
@@ -457,7 +457,7 @@ header {
     }
     .hotel-img {
         width: 70%;
-        transition: transform 0.5s ease;
+        transition: all 1s ease;
         img {
             display: block;
             width: 100%;

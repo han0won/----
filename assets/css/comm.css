@@ -456,7 +456,7 @@ header .gnb-bar span {
 }
 
 .hotels {
-  height: 110vh;
+  height: 100vh;
   background: #FCFAFA;
 }
 .hotels .swiper {
@@ -526,7 +526,7 @@ header .gnb-bar span {
 }
 .hotels .hotel-img {
   width: 70%;
-  transition: transform 0.5s ease;
+  transition: all 1s ease;
 }
 .hotels .hotel-img img {
   display: block;

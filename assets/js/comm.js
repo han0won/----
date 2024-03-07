@@ -78,8 +78,10 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop >= hotelsTop) {
         hotelImg.style.transform = 'translateX(0)';
+        hotelImg.style.opacity = 1;
     } else {
         hotelImg.style.transform = 'translateX(100%)';
+        hotelImg.style.opacity = 0;
     }
 })
 
