@@ -96,6 +96,7 @@ header {
   left: 0;
   width: 100%;
   height: 80px;
+  z-index: 1000;
 }
 header .hd-wrap {
   display: flex;
@@ -105,19 +106,70 @@ header .hd-wrap {
   margin: 0 auto;
   height: 100%;
   padding: 0 20px;
+  transition: all 0.3s;
 }
-header .gnb-bar a {
+header .hd-wrap.click {
+  background: #DDCBBE;
+}
+header .hd-wrap.bg-on {
+  background: #DDCBBE;
+}
+header #gnb .gnb-bar {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  cursor: pointer;
 }
-header .gnb-bar span {
+header #gnb .gnb-bar span {
   display: block;
   width: 30px;
   height: 1px;
   background: white;
+  transition: all 0.3s;
 }
-
+header #gnb .gnb-bar .span1.click {
+  transform: rotate(45deg) translateX(5px) translateY(10px);
+}
+header #gnb .gnb-bar .span3.click {
+  transform: rotate(-45deg) translateX(6px) translateY(-10px);
+  transform-origin: center;
+}
+header #gnb .gnb-bar .span2.click {
+  opacity: 0;
+}
+header #gnb .depth1 {
+  position: absolute;
+  top: -400px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  width: 100%;
+  font-family: "Nanum Gothic";
+  background: #DDCBBE;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+header #gnb .depth1 > li > a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #B07D58;
+}
+header #gnb .depth1.click {
+  top: 80px;
+  opacity: 1;
+}
+header #gnb .depth2 {
+  padding: 40px 0;
+}
+header #gnb .depth2 li {
+  padding: 15px 0;
+}
+header #gnb .depth2 a {
+  font-size: 14px;
+  color: #2D2D2D;
+}
 .main-banner {
   display: flex;
   justify-content: center;

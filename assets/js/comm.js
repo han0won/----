@@ -1,5 +1,32 @@
 AOS.init();
 
+// header
+
+const bar = document.querySelector('header .gnb-bar')
+const span1 = document.querySelector('header .span1')
+const span2 = document.querySelector('header .span2')
+const span3 = document.querySelector('header .span3')
+const nav = document.querySelector('header .depth1')
+const hd = document.querySelector('header .hd-wrap')
+const sectionIn = document.querySelector('.hotel-list')
+
+bar.addEventListener('click', function() {
+    span1.classList.toggle('click');
+    span2.classList.toggle('click');
+    span3.classList.toggle('click');
+    nav.classList.toggle('click');
+    hd.classList.toggle('click');
+})
+
+window.addEventListener('scroll', function() {
+    if (hd.offsetTop > sectionIn.offsetTop) {
+        hd.classList.add('bg-on')
+    } else {
+        hd.classList.remove('bg-on')
+    }
+})
+
+
 // hotel-list
 document.addEventListener('mousemove', (e) => {
     let mouseX = e.pageX - 45; 
