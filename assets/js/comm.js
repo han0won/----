@@ -106,6 +106,14 @@ var swiper = new Swiper(".instaSwiper", {
     slidesPerView: 1,
     breakpoints: {
         476: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        801: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        1201: {
             slidesPerView: 4,
             spaceBetween: 20
         },

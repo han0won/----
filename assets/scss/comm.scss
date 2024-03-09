@@ -860,8 +860,44 @@
             font-size: 14px;
         }
     }
+    @media screen and (max-width: 1200px) {
+        height: auto;
+        .club-wrap {
+            flex-direction: column;
+            padding: 150px 0;
+        }
+        .club-title {
+            width: auto;
+            margin-bottom: 150px;
+            .title-inner {
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .club-info {
+            width: auto;
+            .info-box {
+                border: none;
+            }
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .club-title {
+            margin-bottom: 100px;
+        }
+        .club-info {
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            .info-box {
+                width: auto;
+            }
+        }
+
+    }
 }
 .instagram {
+    padding: 0 20px;
     background: $bg;
     .insta-wrap {
         margin: 0 auto;
@@ -907,6 +943,26 @@
             }
         }
     }
+    @media screen and (max-width: 1200px) {
+        .insta-wrap {
+            padding: 150px 0;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .insta-wrap {
+            padding: 100px 0;
+        }
+    }
+    @media screen and (max-width: 475px) {
+        .insta-text {
+            p {
+                font-size: 30px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 #footer {
@@ -939,7 +995,7 @@
         align-items: flex-end;
         .site {
             position: relative;
-            width: 100%;
+            width: 150px;
             height: 40px;
             font-size: 12px;
             font-family: "Nanum Gothic";
@@ -985,6 +1041,29 @@
         }
         .copyright {
             font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .ft-wrap {
+        flex-direction: column;
+        padding: 60px 20px;
+        }
+        .ft-left {
+            flex-direction: column;
+            gap: 30px;
+        }
+        .ft-text {
+            margin-bottom: 30px;
+            strong {
+                font-size: 20px;
+            }
+            p {
+                margin-top: 30px;
+                font-size: 12px;
+            }
+        }
+        .ft-right {
+            align-items: flex-start;
         }
     }
 }

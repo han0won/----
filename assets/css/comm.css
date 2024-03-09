@@ -922,8 +922,45 @@ body {
 .club .club-info p {
   font-size: 14px;
 }
+@media screen and (max-width: 1200px) {
+  .club {
+    height: auto;
+  }
+  .club .club-wrap {
+    flex-direction: column;
+    padding: 150px 0;
+  }
+  .club .club-title {
+    width: auto;
+    margin-bottom: 150px;
+  }
+  .club .club-title .title-inner {
+    align-items: center;
+    text-align: center;
+  }
+  .club .club-info {
+    width: auto;
+  }
+  .club .club-info .info-box {
+    border: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .club .club-title {
+    margin-bottom: 100px;
+  }
+  .club .club-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .club .club-info .info-box {
+    width: auto;
+  }
+}
 
 .instagram {
+  padding: 0 20px;
   background: #FCFAFA;
 }
 .instagram .insta-wrap {
@@ -970,6 +1007,24 @@ body {
 .instagram .insta-box img:hover {
   scale: 1.1;
 }
+@media screen and (max-width: 1200px) {
+  .instagram .insta-wrap {
+    padding: 150px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .instagram .insta-wrap {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 475px) {
+  .instagram .insta-text p {
+    font-size: 30px;
+  }
+  .instagram .insta-text span {
+    font-size: 14px;
+  }
+}
 
 #footer {
   background: #2D2D2D;
@@ -1001,7 +1056,7 @@ body {
 }
 #footer .ft-right .site {
   position: relative;
-  width: 100%;
+  width: 150px;
   height: 40px;
   font-size: 12px;
   font-family: "Nanum Gothic";
@@ -1047,4 +1102,27 @@ body {
 }
 #footer .ft-right .copyright {
   font-size: 12px;
+}
+@media screen and (max-width: 800px) {
+  #footer .ft-wrap {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+  #footer .ft-left {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #footer .ft-text {
+    margin-bottom: 30px;
+  }
+  #footer .ft-text strong {
+    font-size: 20px;
+  }
+  #footer .ft-text p {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  #footer .ft-right {
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=comm.css.map */
