@@ -739,16 +739,7 @@ body {
   font-weight: 700;
   color: #2D2D2D;
   line-height: 2;
-}
-.midtro p::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100px;
-  height: 10px;
-  background: #FCFAFA;
+  mix-blend-mode: color-burn;
 }
 .midtro .video-wrap {
   position: absolute;
@@ -756,6 +747,7 @@ body {
   left: 0;
   z-index: -100;
   overflow: hidden;
+  filter: blur(3px);
 }
 .midtro .video-wrap video {
   width: 100%;

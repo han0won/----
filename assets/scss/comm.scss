@@ -676,16 +676,7 @@
         font-weight: 700;
         color: $text-default;
         line-height: 2;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            width: 100px;
-            height: 10px;
-            background: $bg;
-        }
+        mix-blend-mode: color-burn;
     }
     .video-wrap {
         position: absolute;
@@ -693,6 +684,7 @@
         left: 0;
         z-index: -100;
         overflow: hidden;
+        filter: blur(3px);
         video {
             width: 100%;
         }
