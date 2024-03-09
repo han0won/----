@@ -1,13 +1,12 @@
 AOS.init();
 
 // header
-
-const bar = document.querySelector('header .gnb-bar')
-const span1 = document.querySelector('header .span1')
-const span2 = document.querySelector('header .span2')
-const span3 = document.querySelector('header .span3')
-const nav = document.querySelector('header .depth1')
-const hd = document.querySelector('header .hd-wrap')
+const bar = document.querySelector('#header .gnb-bar')
+const span1 = document.querySelector('#header .span1')
+const span2 = document.querySelector('#header .span2')
+const span3 = document.querySelector('#header .span3')
+const nav = document.querySelector('#header .depth1')
+const hd = document.querySelector('#header')
 const sectionIn = document.querySelector('.hotel-list')
 
 bar.addEventListener('click', function() {
