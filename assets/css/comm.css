@@ -371,6 +371,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
 }
 .hotel-list .list-name span {
   margin-bottom: 60px;
@@ -389,9 +390,34 @@ body {
 .hotel-list .list-name a:hover {
   color: #B07D58;
 }
+@media screen and (max-width: 800px) {
+  .hotel-list {
+    padding-bottom: 200px;
+  }
+  .hotel-list .title-wrap {
+    padding-bottom: 60px;
+  }
+  .hotel-list .title-wrap h2 {
+    font-size: 48px;
+  }
+  .hotel-list .title-wrap span {
+    font-size: 18px;
+  }
+  .hotel-list .list-wrap {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hotel-list .list-img {
+    width: auto;
+    height: 360px;
+  }
+  .hotel-list .list-name li {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 475px) {
   .hotel-list {
-    padding: 100px 0 150px;
+    padding: 150px 0;
   }
   .hotel-list .title-wrap {
     padding-bottom: 60px;
@@ -402,12 +428,7 @@ body {
   .hotel-list .title-wrap span {
     font-size: 14px;
   }
-  .hotel-list .list-wrap {
-    flex-direction: column;
-    gap: 60px;
-  }
   .hotel-list .list-img {
-    width: auto;
     height: 150px;
   }
   .hotel-list .list-name span {
@@ -417,7 +438,7 @@ body {
     margin-bottom: 15px;
   }
   .hotel-list .list-name a {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -438,6 +459,8 @@ body {
   left: 0;
   width: 100%;
   z-index: -100;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .intro .intro-bg p {
   display: flex;
@@ -499,6 +522,69 @@ body {
   font-family: "Nanum Gothic";
   font-size: 16px;
   line-height: 1.8;
+}
+@media screen and (max-width: 1200px) {
+  .intro .intro-bg img {
+    top: 0;
+  }
+  .intro .box-wrap .intro-box {
+    flex-direction: column;
+  }
+  .intro .box-wrap .intro-img {
+    width: auto;
+  }
+  .intro .box-wrap .intro-text {
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .intro .box-wrap .intro-text p {
+    margin-top: 36px;
+  }
+  .intro .box-wrap .reverse-box {
+    flex-direction: column-reverse;
+  }
+  .intro .box-wrap .intro-box:last-child {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro .box-wrap {
+    padding: 250px 0;
+  }
+  .intro .intro-bg {
+    height: 360px;
+  }
+  .intro .intro-bg img {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .intro .intro-bg {
+    height: 300px;
+  }
+  .intro .intro-bg p {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .intro .box-wrap {
+    padding: 150px 0;
+  }
+  .intro .box-wrap .intro-img {
+    height: 240px;
+  }
+  .intro .box-wrap .intro-text {
+    padding: 0 20px;
+  }
+  .intro .box-wrap .intro-text strong {
+    font-size: 24px;
+  }
+  .intro .box-wrap .intro-text p {
+    font-size: 14px;
+  }
+  .intro .box-wrap .intro-box:last-child {
+    margin-top: 100px;
+  }
 }
 
 .info {
