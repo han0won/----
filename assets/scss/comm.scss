@@ -101,6 +101,7 @@
     height: 100svh;
     background-image: url(../../images/bg-main.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     &::before {
         content: '';
@@ -222,6 +223,22 @@
           transform: translateX(-100%);
         }
     }
+    @media screen and (max-width: 475px) {
+        strong {
+            font-size: 36px;
+            &::after {
+                right: -20px;
+                bottom: 12px;
+                width: 16px;
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+        .btn-reserve span {
+            font-size: 14px;
+        }
+    }
 }
 .hotel-list {
     padding: 200px 0 300px;
@@ -303,6 +320,37 @@
             }
         }
     }
+    @media screen and (max-width: 475px) {
+        padding: 100px 0 150px;
+        .title-wrap {
+            padding-bottom: 60px;
+            h2 {
+                font-size: 36px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .list-wrap {
+            flex-direction: column;
+            gap: 60px;
+        }
+        .list-img {
+            width: auto;
+            height: 150px;
+        }
+        .list-name {
+            span {
+                margin-bottom: 40px;
+            }
+            li {
+                margin-bottom: 15px;
+            }
+            a {
+                font-size: 26px;
+            }
+        }
+    }
 }
 .intro {
     .intro-wrap {
@@ -317,7 +365,7 @@
         height: 480px;
         img {
             position: fixed;
-            top: -600px;
+            top: -350px;
             left: 0;
             width: 100%;
             z-index: -100;
@@ -383,6 +431,11 @@
             }
         }
     }
+    // @media screen and (max-width: 475px) {
+    //     .intro-bg p {
+    //         font-size: 14px;
+    //     }
+    // }
 }
 .info {
     background: $bg;
@@ -687,6 +740,25 @@
         filter: blur(3px);
         video {
             width: 100%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .mid-box {
+            flex-direction: column-reverse;
+            .mid-img {
+                position: static;
+                width: 280px;
+                height: 430px;
+            }
+            .img1,
+            .img4 {
+                display: none;
+            }
+            span {
+                text-align: center;
+                padding-top: 30px;
+                font-size: 24px;
+            }
         }
     }
 }

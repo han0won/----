@@ -103,7 +103,13 @@ var swiper = new Swiper(".instaSwiper", {
         delay: 2000,
         disableOnInteraction: false,
     },
-    slidesPerView: 4,
+    slidesPerView: 1,
+    breakpoints: {
+        476: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        },
+    }
 });
 
 // footer
