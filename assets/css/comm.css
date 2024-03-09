@@ -613,7 +613,6 @@ body {
   transition: all 0.5s;
 }
 .hotels .hotel-wrap .hotel-img .img:hover {
-  scale: 1.05;
   filter: grayscale(0%);
 }
 .hotels #jeonju .img1 {
@@ -913,10 +912,10 @@ body {
   scale: 1.1;
 }
 
-footer {
+#footer {
   background: #2D2D2D;
 }
-footer .ft-wrap {
+#footer .ft-wrap {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -924,31 +923,31 @@ footer .ft-wrap {
   max-width: 1440px;
   color: white;
 }
-footer .ft-left {
+#footer .ft-left {
   display: flex;
   gap: 120px;
 }
-footer .ft-text strong {
+#footer .ft-text strong {
   font-size: 20px;
 }
-footer .ft-text p {
+#footer .ft-text p {
   font-family: "Nanum Gothic";
   margin-top: 40px;
   font-size: 14px;
 }
-footer .ft-right {
+#footer .ft-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-footer .ft-right .site {
+#footer .ft-right .site {
   position: relative;
   width: 100%;
   height: 40px;
   font-size: 12px;
   font-family: "Nanum Gothic";
 }
-footer .ft-right .site ul {
+#footer .ft-right .site ul {
   position: absolute;
   top: -500%;
   left: 0;
@@ -959,34 +958,34 @@ footer .ft-right .site ul {
   background: #2D2D2D;
   transition: all 0.3s;
 }
-footer .ft-right .site ul.on {
+#footer .ft-right .site ul.on {
   opacity: 1;
 }
-footer .ft-right .site li {
+#footer .ft-right .site li {
   padding: 10px;
 }
-footer .ft-right .site li:hover {
+#footer .ft-right .site li:hover {
   background: #B07D58;
 }
-footer .ft-right .site .title-box {
+#footer .ft-right .site .title-box {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #FCFAFA;
 }
-footer .ft-right .site .title-box p {
+#footer .ft-right .site .title-box p {
   line-height: 40px;
   font-size: 14px;
   padding-left: 10px;
 }
-footer .ft-right .site .title-box i {
+#footer .ft-right .site .title-box i {
   padding: 12px 10px 0 0;
 }
-footer .ft-right .icon {
+#footer .ft-right .icon {
   display: flex;
   gap: 27px;
   margin: 40px 0;
 }
-footer .ft-right .copyright {
+#footer .ft-right .copyright {
   font-size: 12px;
 }/*# sourceMappingURL=comm.css.map */

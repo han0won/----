@@ -17,13 +17,14 @@ bar.addEventListener('click', function() {
     hd.classList.toggle('click');
 })
 
+
 window.addEventListener('scroll', function() {
-    if (hd.offsetTop > sectionIn.offsetTop) {
-        hd.classList.add('bg-on')
+    if (window.pageYOffset > sectionIn.offsetTop) {
+        hd.classList.add('bg-on');
     } else {
-        hd.classList.remove('bg-on')
+        hd.classList.remove('bg-on');
     }
-})
+});
 
 
 // hotel-list
@@ -85,7 +86,7 @@ ulsanText.addEventListener('mouseleave', function() {
 // hotels
 var swiper = new Swiper(".hotelSwiper", {
     autoplay: {
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false,
     },
     loop: true,
