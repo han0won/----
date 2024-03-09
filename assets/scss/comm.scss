@@ -783,6 +783,10 @@ header {
         img {
             display: block;
             width: 100%;
+            transition: all 0.3s;
+            &:hover {
+                scale: 1.1;
+            }
         }
     }
 }

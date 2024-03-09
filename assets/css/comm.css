@@ -850,6 +850,10 @@ header .gnb-bar span {
 .instagram .insta-box img {
   display: block;
   width: 100%;
+  transition: all 0.3s;
+}
+.instagram .insta-box img:hover {
+  scale: 1.1;
 }
 
 footer {
