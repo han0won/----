@@ -880,6 +880,47 @@ footer .ft-right {
   flex-direction: column;
   align-items: flex-end;
 }
+footer .ft-right .site {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  font-family: "Nanum Gothic";
+}
+footer .ft-right .site ul {
+  position: absolute;
+  top: -500%;
+  left: 0;
+  padding: 5px 0;
+  width: 100%;
+  opacity: 0;
+  border: 1px solid #FCFAFA;
+  background: #2D2D2D;
+  transition: all 0.3s;
+}
+footer .ft-right .site ul.on {
+  opacity: 1;
+}
+footer .ft-right .site li {
+  padding: 10px;
+}
+footer .ft-right .site li:hover {
+  background: #B07D58;
+}
+footer .ft-right .site .title-box {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FCFAFA;
+}
+footer .ft-right .site .title-box p {
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+footer .ft-right .site .title-box i {
+  padding: 12px 10px 0 0;
+}
 footer .ft-right .icon {
   display: flex;
   gap: 27px;

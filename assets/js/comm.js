@@ -78,3 +78,11 @@ var swiper = new Swiper(".instaSwiper", {
     },
     slidesPerView: 4,
 });
+
+// footer
+const siteBox = document.querySelector('footer .title-box')
+const siteList = document.querySelector('footer ul')
+
+siteBox.addEventListener('click', function() {
+    siteList.classList.toggle('on');
+})
