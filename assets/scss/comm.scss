@@ -454,6 +454,58 @@
             }
         }
     }
+    .roll-wrap {
+        position: relative;
+        width: 100%;
+        background: $bg;
+        .text-roll,
+        .text-roll2 {
+            display: flex;
+            gap: 100px;
+            overflow: hidden;
+            p {
+                white-space: nowrap;
+                font-size: 60px;
+                font-weight: 800;
+                color: transparent;
+                -webkit-text-stroke: 1px $primary;
+            }
+            span {
+                color: $primary;
+                -webkit-text-stroke: 0px ;
+            }
+        }
+        .text-roll {
+            position: absolute;
+            left: -2400px;
+            bottom: 290px;
+            p {
+                animation: textMove 25s linear infinite;
+                @keyframes textMove {
+                    0% {
+                        transform: translate(0);
+                    }
+                    100% {
+                        transform: translate(100%);
+                    }
+                }
+            }
+        }
+        .text-roll2 {
+            padding-bottom: 200px;
+            p {
+                animation: moveReverse 20s linear infinite;
+                @keyframes moveReverse {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translate(-100%);
+                    }
+                }
+            }
+        }
+    }
     @media screen and (max-width: 1200px) {
         .intro-bg {
             img {

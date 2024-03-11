@@ -524,6 +524,60 @@ body {
   font-size: 16px;
   line-height: 1.8;
 }
+.intro .roll-wrap {
+  position: relative;
+  width: 100%;
+  background: #FCFAFA;
+}
+.intro .roll-wrap .text-roll,
+.intro .roll-wrap .text-roll2 {
+  display: flex;
+  gap: 100px;
+  overflow: hidden;
+}
+.intro .roll-wrap .text-roll p,
+.intro .roll-wrap .text-roll2 p {
+  white-space: nowrap;
+  font-size: 60px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #DDCBBE;
+}
+.intro .roll-wrap .text-roll span,
+.intro .roll-wrap .text-roll2 span {
+  color: #DDCBBE;
+  -webkit-text-stroke: 0px;
+}
+.intro .roll-wrap .text-roll {
+  position: absolute;
+  left: -2400px;
+  bottom: 290px;
+}
+.intro .roll-wrap .text-roll p {
+  animation: textMove 25s linear infinite;
+}
+@keyframes textMove {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
+.intro .roll-wrap .text-roll2 {
+  padding-bottom: 200px;
+}
+.intro .roll-wrap .text-roll2 p {
+  animation: moveReverse 20s linear infinite;
+}
+@keyframes moveReverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
 @media screen and (max-width: 1200px) {
   .intro .intro-bg img {
     top: 0;
