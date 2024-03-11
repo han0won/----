@@ -572,66 +572,14 @@
                 margin-top: 100px;
             }
         }
-    }
-}
-.info {
-    background: $bg;
-    .info-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 200px 0;
-    }
-    .card-wrap {
-        margin-bottom: 60px;
-        ul {
-            display: flex;
-            gap: 35px;
-        }
-        li {
-            &:nth-child(2) {
-                margin-top: 100px;
+        .roll-wrap {
+            .text-roll {
+                bottom: 230px
             }
-            &:nth-child(3) {
-                margin-top: 200px;
+            .text-roll2 {
+                padding-bottom: 150px;
             }
         }
-        img {
-            position: relative;
-            width: 300px;
-            height: 480px;
-            object-fit: cover;
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 100%;
-                z-index: 10;
-                background: black;
-                animation: colorbox 1.6s ease-in-out ;
-            }
-        }
-        @keyframes colorbox {
-            0%{
-              height: 0;
-              top: 0;
-            }
-            65%{
-                height: 100%;
-                top: 0;
-            }
-            100% {
-                height: 0;
-                top: 100%;
-            }
-        }
-    }
-    p {
-        font-family: "Nanum Gothic";
-        font-size: 18px;
-        line-height: 2.2;
-        text-align: center;
     }
 }
 .hotels {
@@ -835,6 +783,135 @@
             }
         }
     }
+}
+.info {
+    background: $bg;
+    .info-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 0;
+    }
+    .card-wrap {
+        margin-bottom: 60px;
+        ul {
+            display: flex;
+            gap: 35px;
+        }
+        li {
+            &:nth-child(2) {
+                margin-top: 100px;
+            }
+            &:nth-child(3) {
+                margin-top: 200px;
+            }
+        }
+        img {
+            position: relative;
+            width: 300px;
+            height: 480px;
+            object-fit: cover;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                z-index: 10;
+                background: black;
+                animation: colorbox 1.6s ease-in-out ;
+            }
+        }
+        @keyframes colorbox {
+            0%{
+              height: 0;
+              top: 0;
+            }
+            65%{
+                height: 100%;
+                top: 0;
+            }
+            100% {
+                height: 0;
+                top: 100%;
+            }
+        }
+    }
+    p {
+        padding: 0 20px;
+        font-family: "Nanum Gothic";
+        font-size: 18px;
+        line-height: 2.2;
+        text-align: center;
+    }
+    @media screen and (max-width: 1000px) {
+        .card-wrap {
+            ul {
+                gap: 20px;
+            }
+            img {
+            width: 280px;
+            height: 400px;
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .card-wrap {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            ul {
+                width: 100%;
+                height: 100%;
+            }
+            li {
+                position: absolute;
+                &:first-child {
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2) {
+                    top: 15%;
+                    left: 25%;
+                    margin-top: 0;
+                }
+                &:last-child {
+                    bottom: 0;
+                    right: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 560px) {
+        .info-wrap {
+            padding: 150px 0;
+        }
+        .card-wrap {
+            height: 1000px;
+            li {
+                &:first-child {
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2) {
+                    top: 30%;
+                    left: auto;
+                    right: 0;
+                }
+                &:last-child {
+                    top: 60%;
+                    left: 0;
+                }
+            }
+        }
+    }        
 }
 .club {
     position: relative;

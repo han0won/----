@@ -640,66 +640,12 @@ body {
   .intro .box-wrap .intro-box:last-child {
     margin-top: 100px;
   }
-}
-
-.info {
-  background: #FCFAFA;
-}
-.info .info-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 0;
-}
-.info .card-wrap {
-  margin-bottom: 60px;
-}
-.info .card-wrap ul {
-  display: flex;
-  gap: 35px;
-}
-.info .card-wrap li:nth-child(2) {
-  margin-top: 100px;
-}
-.info .card-wrap li:nth-child(3) {
-  margin-top: 200px;
-}
-.info .card-wrap img {
-  position: relative;
-  width: 300px;
-  height: 480px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.info .card-wrap img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 10;
-  background: black;
-  animation: colorbox 1.6s ease-in-out;
-}
-@keyframes colorbox {
-  0% {
-    height: 0;
-    top: 0;
+  .intro .roll-wrap .text-roll {
+    bottom: 230px;
   }
-  65% {
-    height: 100%;
-    top: 0;
+  .intro .roll-wrap .text-roll2 {
+    padding-bottom: 150px;
   }
-  100% {
-    height: 0;
-    top: 100%;
-  }
-}
-.info p {
-  font-family: "Nanum Gothic";
-  font-size: 18px;
-  line-height: 2.2;
-  text-align: center;
 }
 
 .hotels {
@@ -895,6 +841,131 @@ body {
   .hotels .hotel-wrap .hotel-name .name-info {
     text-align: center;
     align-items: center;
+  }
+}
+
+.info {
+  background: #FCFAFA;
+}
+.info .info-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+}
+.info .card-wrap {
+  margin-bottom: 60px;
+}
+.info .card-wrap ul {
+  display: flex;
+  gap: 35px;
+}
+.info .card-wrap li:nth-child(2) {
+  margin-top: 100px;
+}
+.info .card-wrap li:nth-child(3) {
+  margin-top: 200px;
+}
+.info .card-wrap img {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info .card-wrap img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  background: black;
+  animation: colorbox 1.6s ease-in-out;
+}
+@keyframes colorbox {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  65% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+.info p {
+  padding: 0 20px;
+  font-family: "Nanum Gothic";
+  font-size: 18px;
+  line-height: 2.2;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .info .card-wrap ul {
+    gap: 20px;
+  }
+  .info .card-wrap img {
+    width: 280px;
+    height: 400px;
+  }
+  .info p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .info .card-wrap {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  .info .card-wrap ul {
+    width: 100%;
+    height: 100%;
+  }
+  .info .card-wrap li {
+    position: absolute;
+  }
+  .info .card-wrap li:first-child {
+    top: 0;
+    left: 0;
+  }
+  .info .card-wrap li:nth-child(2) {
+    top: 15%;
+    left: 25%;
+    margin-top: 0;
+  }
+  .info .card-wrap li:last-child {
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
+  }
+  .info p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .info .info-wrap {
+    padding: 150px 0;
+  }
+  .info .card-wrap {
+    height: 1000px;
+  }
+  .info .card-wrap li:first-child {
+    top: 0;
+    left: 0;
+  }
+  .info .card-wrap li:nth-child(2) {
+    top: 30%;
+    left: auto;
+    right: 0;
+  }
+  .info .card-wrap li:last-child {
+    top: 60%;
+    left: 0;
   }
 }
 
