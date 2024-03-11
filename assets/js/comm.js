@@ -85,10 +85,10 @@ ulsanText.addEventListener('mouseleave', function() {
 
 // hotels
 var swiper = new Swiper(".hotelSwiper", {
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",

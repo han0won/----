@@ -794,6 +794,47 @@
     .swiper-button-prev {
         color: $point;
     }
+    @media screen and (max-width: 1000px) {
+        height: auto;
+        .hotel-wrap {
+            flex-direction: column-reverse;
+            .hotel-img {
+                width: auto;
+                height: 360px;
+                overflow: hidden;
+                ul {
+                    animation: none;
+                }
+                li {
+                    height: 400px;
+                }
+                .img {
+                    filter: grayscale(0);
+                }
+            }
+            .hotel-name {
+                margin-top: 60px;
+                padding-bottom: 60px;
+                width: auto;
+                img {
+                    height: 25px;
+                }
+                strong {
+                    margin-top: 20px;
+                }
+                span {
+                    margin: 30px 0;
+                }
+                p {
+                    margin-bottom: 30px;
+                }
+                .name-info {
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
 .club {
     position: relative;

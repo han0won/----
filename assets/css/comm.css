@@ -854,6 +854,49 @@ body {
 .hotels .swiper-button-prev {
   color: #B07D58;
 }
+@media screen and (max-width: 1000px) {
+  .hotels {
+    height: auto;
+  }
+  .hotels .hotel-wrap {
+    flex-direction: column-reverse;
+  }
+  .hotels .hotel-wrap .hotel-img {
+    width: auto;
+    height: 360px;
+    overflow: hidden;
+  }
+  .hotels .hotel-wrap .hotel-img ul {
+    animation: none;
+  }
+  .hotels .hotel-wrap .hotel-img li {
+    height: 400px;
+  }
+  .hotels .hotel-wrap .hotel-img .img {
+    filter: grayscale(0);
+  }
+  .hotels .hotel-wrap .hotel-name {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    width: auto;
+  }
+  .hotels .hotel-wrap .hotel-name img {
+    height: 25px;
+  }
+  .hotels .hotel-wrap .hotel-name strong {
+    margin-top: 20px;
+  }
+  .hotels .hotel-wrap .hotel-name span {
+    margin: 30px 0;
+  }
+  .hotels .hotel-wrap .hotel-name p {
+    margin-bottom: 30px;
+  }
+  .hotels .hotel-wrap .hotel-name .name-info {
+    text-align: center;
+    align-items: center;
+  }
+}
 
 .club {
   position: relative;
