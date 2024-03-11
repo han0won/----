@@ -86,6 +86,34 @@
             }
         }
     }
+    @media screen and (max-width: 475px) {
+        .logo img {
+            height: 30px;
+        }
+        #gnb {
+            .depth1 {
+                top: 60px;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0 20px 20px;
+                height: calc(100svh - 60px);
+                > li {
+                    display: flex;
+                    flex: 1;
+                    > a {
+                        width: 40%;
+                    }
+                }
+            }
+            .depth2 {
+                flex: 1;
+                padding: 0 0 0 20px;
+                li {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
 }
 #header.click {
     background: $primary;
