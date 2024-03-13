@@ -17,7 +17,6 @@ bar.addEventListener('click', function() {
     hd.classList.toggle('click');
 })
 
-
 window.addEventListener('scroll', function() {
     if (window.pageYOffset > sectionIn.offsetTop) {
         hd.classList.add('bg-on');
@@ -37,58 +36,45 @@ document.addEventListener('mousemove', (e) => {
     listCursor.style.top = mouseY + 'px';
 })
 
-const jeonjuImg = document.querySelector('.jeonju-img');
-const jeonjuText = document.querySelector('.jeonju-text');
-jeonjuText.addEventListener('mouseover', function() {
-    jeonjuImg.classList.add('active');
-});
-jeonjuText.addEventListener('mouseleave', function() {
-    jeonjuImg.classList.remove('active');
-});
+const hotelList = [
+    {
+        img: document.querySelector('.jeonju-img'),
+        text: document.querySelector('.jeonju-text'),
+    },
+    {
+        img: document.querySelector('.pohang-img'),
+        text: document.querySelector('.pohang-text'),
+    },
+    {
+        img: document.querySelector('.gyeongju-img'),
+        text: document.querySelector('.gyeongju-text'),
+    },
+    {
+        img: document.querySelector('.mokpo-img'),
+        text: document.querySelector('.mokpo-text'),
+    },
+    {
+        img: document.querySelector('.ulsan-img'),
+        text: document.querySelector('.ulsan-text'),
+    },
+];
 
-const pohangImg = document.querySelector('.pohang-img');
-const pohangText = document.querySelector('.pohang-text');
-pohangText.addEventListener('mouseover', function() {
-    pohangImg.classList.add('active');
-});
-pohangText.addEventListener('mouseleave', function() {
-    pohangImg.classList.remove('active');
-});
-
-const gyeongjuImg = document.querySelector('.gyeongju-img');
-const gyeongjuText = document.querySelector('.gyeongju-text');
-gyeongjuText.addEventListener('mouseover', function() {
-    gyeongjuImg.classList.add('active');
-});
-gyeongjuText.addEventListener('mouseleave', function() {
-    gyeongjuImg.classList.remove('active');
-});
-
-const mokpoImg = document.querySelector('.mokpo-img');
-const mokpoText = document.querySelector('.mokpo-text');
-mokpoText.addEventListener('mouseover', function() {
-    mokpoImg.classList.add('active');
-});
-mokpoText.addEventListener('mouseleave', function() {
-    mokpoImg.classList.remove('active');
-});
-
-const ulsanImg = document.querySelector('.ulsan-img');
-const ulsanText = document.querySelector('.ulsan-text');
-ulsanText.addEventListener('mouseover', function() {
-    ulsanImg.classList.add('active');
-});
-ulsanText.addEventListener('mouseleave', function() {
-    ulsanImg.classList.remove('active');
-});
+hotelList.forEach(props => {
+    props.text.addEventListener('mouseover', () => {
+        props.img.classList.add('active');
+    })
+    props.text.addEventListener('mouseleave', () => {
+        props.img.classList.remove('active');
+    })
+})
 
 
 // hotels
 var swiper = new Swiper(".hotelSwiper", {
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
